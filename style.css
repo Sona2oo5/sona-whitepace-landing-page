@@ -1,3 +1,5 @@
+/* Whitespace */
+
 *{
     margin: 0;
     padding: 0;
@@ -47,6 +49,9 @@ header{
     background-color: #FFE492;
     border: none;
     border-radius: 8px;
+    font-size: 18px;
+    color: #043873;
+
 }
 
 .blue-btn{
@@ -55,6 +60,8 @@ header{
     background-color: #4F9CF9;
     border: none;
     border-radius: 8px;
+    font-size: 18px;
+    color: white;
 }
 
 .header__nav{
@@ -107,14 +114,16 @@ header .container{
     height: 529px;
     width: 824px;
     background-color: skyblue;
-
 }
 
 .hero-section .container{
     display: flex;
     align-items: center;
-
 }
+
+
+
+ /* Project Manegement */
 
 .project-management{
     height: 829px;
@@ -123,6 +132,10 @@ header .container{
     align-items: center;
     background-color: white;
     padding: 140px 0;
+}
+
+.project-text-block {
+    max-width: 672px; 
 }
    
 .project-text-block h1 { 
@@ -141,12 +154,19 @@ header .container{
     margin: 24px 0 64px;
 }
 
+.project-content h1 span {
+    position: relative;
+    display: inline-block;
+    z-index: 2;  
+}
+
 .project-content{
     max-width: 600px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
+
 .project-img-block{
     height: 547px;
     width: 748px;
@@ -158,16 +178,12 @@ header .container{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-}
-
-.project-text-block {
-    max-width: 672px; 
+    gap: 60px;
 }
 
 
 
-
-
+/* Work Together */
 
 .work-together {
     padding: 140px 0;
@@ -178,17 +194,67 @@ header .container{
     display: flex;
     align-items: center;  
     justify-content: space-between;
-    gap: 100px;  
+    gap: 50px;  
+}
+ 
+.orbit-wrapper {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    flex-shrink: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
- .work-img-block {
-    flex: 1; 
+ .inner-orbit {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: 1px dashed #4F9CF9;
+    border-radius: 50%;
 }
 
-.together-img img {
-    max-width: 100%;  
-    height: auto;
+.outer-orbit {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    border: 1px dashed #4F9CF9;
+    border-radius: 50%;
 }
+
+.center-logo {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+
+.dot {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+ 
+.green-dot { background: #31F0D4; top: -22px; left: 50%; transform: translateX(-50%); }
+.blue-dot-1 { background: #4F9CF9; right: -22px; top: 50%; transform: translateY(-50%); }
+.orange-dot { background: #FFA800; bottom: -22px; left: 50%; transform: translateX(-50%); }
+.blue-dot-2 { background: #4F9CF9; left: -22px; top: 50%; transform: translateY(-50%); }
+
+/* Xarici Orbitdəki Dairələr */
+.yellow-dot { background: #FFE492; top: 40px; left: 40px; }
+.blue-dot-3 { background: #4F9CF9; top: 40px; right: 40px; }
+.green-dot-2 { background: #31F0D4; bottom: 40px; right: 40px; }
+.blue-dot-4 { background: #4F9CF9; bottom: 40px; left: 40px; }
+.red-dot { background: #FF5A5A; right: -22px; top: 50%; transform: translateY(-50%); }
+
 
 .work-text-block {
     flex: 1;  
@@ -224,11 +290,173 @@ header .container{
 
 .underline-img {
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -5px;  
+    left: 50%;  
+    transform: translateX(-50%);  
+    bottom: -15px;  
     width: 100%;  
-    height: auto; 
     z-index: -1;  
-    pointer-events: none;
+    pointer-events: none;  
+    height: auto; 
 }
+
+
+/* Choose Plan  */
+
+
+.choose-plan{
+    height: 829px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 140px 0;
+    width: 100%;
+} 
+
+.plan-title {
+    text-align: center;  
+    margin-bottom: 60px;
+}
+
+.plan-title h1{
+    color: #212529;
+    font-size: 72px;
+    text-align: center;
+}
+
+.plan-title h1 span {
+    position: relative;
+    display: inline-block;
+}
+
+.plan-title h1 span img {
+    position: absolute;  
+    bottom: -15px;      
+    left: -120px;
+    width: 220%;    
+    z-index: -1;    
+}
+
+.plan-title p {
+    color: #212529;
+    font-size: 18px;
+    max-width: 800px;
+    margin: 24px auto; 
+    margin-bottom: 60px; 
+}
+
+
+.choose-plan .underline-img {
+    position: absolute;
+    left: 50%;  
+    transform: translateX(-50%);  
+    bottom: -15px;  
+    width: 100%;  
+    z-index: -1;  
+    pointer-events: none;  
+    height: auto; 
+}
+
+.plan-cards {
+    display: flex;              
+    justify-content: center;   
+    align-items: center;
+    gap: 32px;                  
+    margin-top: 50px;    
+    flex-wrap: nowrap;       
+}
+
+.card {
+    background-color: white;
+    padding: 40px 44px;             
+    border: 1px solid #FFE492;  
+    border-radius: 10px;  
+    width: 472px;         
+    min-height: 700px;     
+    display: flex;             
+    flex-direction: column;    
+    align-items: flex-start;  
+    justify-content: flex-start; 
+    gap: 20px; 
+    transition: transform 0.3s;  
+}
+
+.free, .organization {
+    background-color: white;
+    color: #212529;
+    border: 1px solid #FFE492;
+    padding: -10px 44px;
+}
+
+.personal {
+    background-color: #043873; 
+    border: none;
+    padding: 40px 44px;
+    transform: scale(1.05);
+}
+
+.personal .price{
+    color: #FFE492 !important;
+    font-weight: bold;
+    font-size: 36px;
+}
+.personal h3, .personal p, .personal li {
+    color: white;
+}
+
+.plan-btn {
+    padding: 16px 40px;
+    border: 1px solid #FFE492;
+    background: white;
+    color: #212529;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;           
+}
+ 
+.personal .plan-btn {
+    background-color: #4F9CF9;
+    color: white;
+    border: 1px solid #4F9CF9;
+}
+
+.personal .features li {
+    color: white;
+}
+
+ .card h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.card .price {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.features {
+    list-style: none;         
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.features li {
+    display: flex;           
+    align-items: flex-start;  
+    gap: 12px;           
+    margin-bottom: 24px;    
+    font-size: 16px;          
+    line-height: 1.4;         
+}
+
+.features li img {
+    width: 18px;         
+    height: 18px;             
+    flex-shrink: 0;          
+    margin-top: 2px;          
+    object-fit: contain;
+}
+
