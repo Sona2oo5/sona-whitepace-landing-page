@@ -51,7 +51,6 @@ header{
     border-radius: 8px;
     font-size: 18px;
     color: #043873;
-
 }
 
 .blue-btn{
@@ -186,7 +185,7 @@ header .container{
 /* Work Together */
 
 .work-together {
-    padding: 140px 0;
+    /* padding: 140px 0; */
     background-color: white; 
 }
 
@@ -234,6 +233,12 @@ header .container{
     align-items: center;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     z-index: 10;
+}
+
+.center-logo img {
+    width: 50px;  
+    height: auto;
+    object-fit: contain;  
 }
 
 .dot {
@@ -300,11 +305,12 @@ header .container{
 }
 
 
+
 /* Choose Plan  */
-
-
-.choose-plan{
-    height: 829px;
+ 
+.choose-plan{    
+    /* height: 1270; */
+    padding: 140px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -333,7 +339,7 @@ header .container{
     position: absolute;  
     bottom: -15px;      
     left: -120px;
-    width: 220%;    
+    width: 110%;    
     z-index: -1;    
 }
 
@@ -345,14 +351,13 @@ header .container{
     margin-bottom: 60px; 
 }
 
-
 .choose-plan .underline-img {
     position: absolute;
     left: 50%;  
     transform: translateX(-50%);  
     bottom: -15px;  
     width: 100%;  
-    z-index: -1;  
+    z-index: 10;  
     pointer-events: none;  
     height: auto; 
 }
